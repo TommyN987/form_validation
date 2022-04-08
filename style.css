@@ -1,0 +1,16 @@
+#form-container {
+  margin-block: 10%;
+  border: 2px solid black;
+  max-width: 500px;
+}
+
+h1 {
+  text-align: center;
+  padding-top: 15px;
+}
+
+#btn-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: .75rem;
+}
