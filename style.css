@@ -1,16 +1,68 @@
+body {
+  background: beige;
+}
+
 #form-container {
-  margin-block: 10%;
-  border: 2px solid black;
+  margin-block: 8%;
+  border: 2px solid rgb(34, 4, 4);;
+  border-radius: 10px;
   max-width: 500px;
+  background-color: rgb(251, 209, 129);
 }
 
 h1 {
   text-align: center;
   padding-top: 15px;
+  color: rgb(34, 4, 4);
+}
+
+.form-label {
+  color: rgb(34, 4, 4);
+  font-weight: 500;
+}
+
+form div {
+  position: relative;
+}
+
+div i {
+  position: absolute;
+  top: 40px;
+  right: 10px;
+  visibility: hidden;
+}
+
+.error {
+  box-shadow: 0 0 5px 1px red;
+}
+
+.success {
+  box-shadow: 0 0 5px 1px rgb(0, 148, 0);
+}
+
+.success ~ .bi-check-circle-fill {
+  color: rgb(0, 148, 0);
+  visibility: visible;
+}
+
+.error ~ .bi-exclamation-circle-fill {
+  color: red;
+  visibility: visible;
 }
 
 #btn-container {
   display: flex;
   justify-content: center;
   margin-bottom: .75rem;
+}
+
+#btn-submit {
+  font-weight: 600;
+  border: 1.5px solid rgb(34, 4, 4);
+  padding-inline: 25%;
+}
+
+.error-message {
+  color: red;
+  font-weight: 500;
 }
