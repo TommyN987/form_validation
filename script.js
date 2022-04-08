@@ -42,7 +42,9 @@ const checkInputs = () => {
     setSuccess(pwd);
   }
 
-  if (pwdConfirmValue !== pwdValue) {
+  if (pwdConfirmValue === '') {
+    setError(pwdConfirm, 'Confirm password cannot be blank')
+  } else if (pwdConfirmValue !== pwdValue) {
     setError(pwdConfirm, 'Doesn\'t match Password')
   } else {
     setSuccess(pwdConfirm);
